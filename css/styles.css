@@ -1,0 +1,251 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-shadow: border-box;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+nav {
+    display: flex;
+    background-color: transparent;
+    color: black;
+    padding: 10px;
+    font-size: 30px;
+}
+
+nav .nav-div {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.nav-link {
+    display: flex;
+    list-style-type: none;
+    right: 10px;
+    margin: 15px;
+}
+
+.nav-link a {
+    color: black;
+    text-decoration: none;
+    padding: 0 30px 0 30px;
+}
+
+.logo {
+    padding: 0 30px 0 30px;
+    margin: 15px;
+}
+
+.mountain {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top: -50px;
+    right: 0%;
+}
+
+.intro {
+    padding: 180px 0 180px 0;
+}
+
+.intro h1 {
+    font-size: 60px;
+    margin-bottom: 40px;
+}
+
+.intro p {
+    font-size: 20px;
+}
+
+.description {
+    background-color: white;
+    padding: 50px 0 30px 0;
+}
+
+.description img {
+    width: 10%;
+    margin: 50px 0 50px 0;
+}
+
+.description p {
+    margin: 0 650px 20px 650px;
+}
+
+.i-do {
+    padding-top: 50px;
+    background-color: rgb(218, 218, 218);
+}
+
+.i-do h1 {
+    font-size: 30px;
+    padding: 30px 0 30px 0;
+}
+
+.i-do section {
+    display: flex;
+    padding: 20px 0 100px 0;
+}
+
+.i-do section .corner {
+    margin: 0 100px 0 100px;
+}
+
+.i-do section div h3 {
+    margin-bottom: 20px;
+}
+
+.i-do section div img {
+    width: 30%;
+    margin-bottom: 50px;
+}
+
+.experience h1 {
+    padding: 80px 0 30px 0;
+    font-size: 30px;
+}
+
+.experience div h2 {
+    text-align: left;
+    padding: 50px 0 0 50px;
+}
+
+.logo-row {
+    display: flex;
+}
+
+.logo-row img {
+    width: 100px;
+    margin: 50px;
+}
+
+.logo-row .logo-js {
+    padding-top: 5px;
+    width: 85px;
+    height: 85px;
+}
+
+.logo-row .logo-github {
+    width: 170px;
+    margin-left: 13px;
+}
+
+.logo-row .logo-java {
+    width: 130px;
+    margin-left: 5px;
+}
+
+.logo-row .logo-python {
+    width: 85px;
+    height: 85px;
+    padding-top: 15px;
+    margin-left: 33px;
+}
+
+.experience .exp {
+    display: flex;
+    background-color: white;
+}
+
+.logo-company img {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 250px;
+}
+
+.experience div .worked {
+    padding-left: 210px;
+}
+
+.logo-company .logo-ascent {
+    padding-bottom: 60px;
+}
+
+.resume img {
+    position: absolute;
+    z-index: -1;
+    right: 0%;
+    filter: blur(4px);
+}
+
+.resume div {
+    color: white;
+    padding: 100px;
+}
+
+.resume div h1 {
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+
+.resume div button {
+    color: white;
+    font-size: 20px;
+    padding: 15px 20px 15px 20px;
+    background-color: transparent;
+    border-color: white;
+}
+
+.projects {
+    background-color: white;
+}
+
+.projects .done {
+    padding: 50px;
+}
+
+.projects div h1 {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.projects .project-img {
+    display: flex;
+    justify-content: center;
+}
+
+.project-img img {
+    width: 25%;
+    margin: 0 30px 100px 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contact {
+    background-color: rgb(218, 218, 218);
+    padding: 70px;
+}
+
+.contact h1 {
+    font-size: 30px;
+    padding: 30px;
+}
+
+.contact button {
+    margin-top: 30px;
+    color: black;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    background-color: transparent;
+    border-color: black;
+}
+
+.contact p {
+    margin: 0 600px 0 600px;
+    font-size: 20px;
+}
+
+footer {
+    padding: 50px;
+    background-color: rgb(22, 22, 22);
+}
+
+footer div i {
+    padding: 25px;
+    color: rgb(218, 218, 218);
+}
+
+footer p {
+    color: rgb(218, 218, 218);
+    padding-top: 20px;
+}
