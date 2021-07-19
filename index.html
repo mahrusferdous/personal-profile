@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Mahrus Ferdous | Full Stack Developer</title>
+        <link rel="icon" href="favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -20,18 +21,24 @@
         <link rel="stylesheet" href="css/styles.css" />
     </head>
     <body>
-        <nav>
+        <nav class="nav-bar">
             <div class="logo">
-                <h4><i class="fas fa-torii-gate"></i> Mahrus</h4>
+                <a href="#"><i class="fas fa-mug-hot"></i> Mahrus</a>
             </div>
-            <div class="nav-div">
-                <ul class="nav-link">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Project</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
+
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+
+            <ul class="nav-link">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Passion</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </nav>
 
         <section class="intro">
@@ -198,5 +205,12 @@
                 <i class="far fa-copyright"></i> Mahrus Ferdous 2020
             </p>
         </footer>
+
+        <script src="js/index.js"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
     </body>
 </html>
