@@ -15,6 +15,7 @@
     position: fixed;
     width: 100%;
     transition: background-color 0.5s linear;
+    z-index: 1;
 }
 
 .logo a {
@@ -27,7 +28,7 @@
     display: flex;
     list-style-type: none;
     right: 0px;
-    margin: 15px;
+    margin: 11px;
     margin-left: auto;
     padding-right: 35px;
 }
@@ -96,7 +97,7 @@
 
 .description {
     background-color: white;
-    padding: 50px 0 30px 0;
+    padding: 100px 0 80px 0;
 }
 
 .description img {
@@ -105,11 +106,14 @@
 }
 
 .description p {
-    margin: 0 35% 20px 35%;
+    margin-bottom: 20px;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .i-do {
-    padding-top: 50px;
+    padding-top: 70px;
     background-color: rgb(218, 218, 218);
 }
 
@@ -136,8 +140,14 @@
     margin-bottom: 50px;
 }
 
+.i-do section div img:hover {
+    cursor: default;
+    transform: rotate(360deg);
+    transition: all 0.5s ease-in-out 0s;
+}
+
 .experience h1 {
-    padding: 80px 0 30px 0;
+    padding: 100px 0 30px 0;
     font-size: 30px;
 }
 
@@ -153,6 +163,14 @@
 .logo-row img {
     width: 100px;
     margin: 50px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+.logo-row img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+    transition: all 1000ms ease;
 }
 
 .logo-row .logo-js {
@@ -181,7 +199,7 @@
 .experience .exp {
     display: flex;
     background-color: white;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 }
 
 .logo-company img {
@@ -196,17 +214,27 @@
 }
 
 .logo-company .logo-ascent {
-    padding-bottom: 60px;
+    padding-bottom: 50px;
 }
 
-.resume img {
-    position: absolute;
-    z-index: -1;
-    right: 0%;
+.fixed-white {
+    background-color: white;
+    height: 10px;
+    width: 100%;
+    border-color: white;
+}
+
+.fixed-bg {
+    background-image: url("../images/coding.jpg");
+    background-attachment: fixed;
     filter: blur(4px);
+    position: absolute;
+    z-index: -5;
+    width: 100%;
+    height: 100%;
 }
 
-.resume div {
+.resume .resume-details {
     color: white;
     padding: 100px;
 }
@@ -214,6 +242,10 @@
 .resume div h1 {
     font-size: 40px;
     padding-bottom: 30px;
+}
+
+.resume {
+    filter: blur(0);
 }
 
 .resume div button {
@@ -224,12 +256,20 @@
     border-color: white;
 }
 
+.resume div button:hover {
+    padding: 15px 35px 15px 35px;
+    transition: all 500ms ease;
+    backdrop-filter: blur(5px);
+}
+
 .projects {
+    position: relative;
+    z-index: 0;
     background-color: white;
 }
 
 .projects .done {
-    padding: 50px;
+    padding: 100px;
 }
 
 .projects div h1 {
@@ -250,7 +290,7 @@
 
 .contact {
     background-color: rgb(218, 218, 218);
-    padding: 70px;
+    padding: 100px;
 }
 
 .contact h1 {
