@@ -14,7 +14,7 @@
     font-size: 30px;
     position: fixed;
     width: 100%;
-    transition: background-color 0.5s linear;
+    transition: all 500ms ease;
     z-index: 1;
 }
 
@@ -64,7 +64,7 @@
     background-color: black;
     padding-top: 0px;
     padding-bottom: 0px;
-    transition: background-color 0.5s linear;
+    transition: all 500ms ease;
 }
 
 .logo {
@@ -282,10 +282,78 @@
     justify-content: center;
 }
 
-.project-img img {
-    width: 25%;
-    margin: 0 30px 100px 30px;
+.project-img div img {
+    width: 100%;
+    height: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project-img div {
+    width: 700px;
+    height: 300px;
+    margin: 0 30px 100px 30px;
+}
+
+.project-img .project1 {
+    background-image: url(../images/blog.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    filter: brightness(100%);
+}
+
+.project-img .project2 {
+    background-image: url(../images/secret.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project-img .project3 {
+    background-image: url(../images/todolist.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project-img div i {
+    font-size: 50px;
+    margin: 20% 10px 0 10px;
+    display: none;
+    color: black;
+}
+
+.project-img .project1:hover {
+    display: inline-block;
+    filter: brightness(65%);
+    transition: all 500ms ease;
+}
+
+.project-img .project1:hover i {
+    display: inline-block;
+}
+
+.project-img .project2:hover {
+    display: inline-block;
+    filter: brightness(65%);
+    transition: all 500ms ease;
+}
+
+.project-img .project2:hover i {
+    display: inline-block;
+}
+
+.project-img .project3:hover {
+    display: inline-block;
+    filter: brightness(65%);
+    transition: all 500ms ease;
+}
+
+.project-img .project3:hover i {
+    display: inline-block;
 }
 
 .contact {
@@ -307,9 +375,17 @@
     border-color: black;
 }
 
+.contact button:hover {
+    background-color: black;
+    color: white;
+    transition: all 500ms ease;
+}
+
 .contact p {
-    margin: 0 35% 0 35%;
     font-size: 20px;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer {
@@ -325,6 +401,11 @@ footer div i {
 footer p {
     color: rgb(218, 218, 218);
     padding-top: 20px;
+}
+
+footer div i:hover {
+    font-size: 28px;
+    transition: 500ms ease;
 }
 
 @media (max-width: 1000px) {
