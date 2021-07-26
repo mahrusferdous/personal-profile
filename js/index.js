@@ -16,3 +16,21 @@ window.onscroll = function () {
         $(".nav-bar").removeClass("nav-fixed");
     }
 };
+
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+        });
+    });
+});
+
+gsap.timeline({
+    scrollTrigger: {
+        trigger: ".envelope",
+        start: "bottom center",
+        toggleClass: { targets: ".envelope", className: "envelope-show" },
+    },
+});
