@@ -6,7 +6,7 @@
     font-family: "Roboto", sans-serif;
 }
 
-.nav-bar {
+.nav-bar-nav {
     display: flex;
     background-color: transparent;
     color: white;
@@ -22,22 +22,29 @@
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-family: "Tangerine", cursive;
 }
 
-.nav-link {
+.navlink {
     display: flex;
     list-style-type: none;
     right: 0px;
-    margin: 11px;
+    margin: 13px;
     margin-left: auto;
     padding-right: 35px;
 }
 
-.nav-link a {
+.navlink a {
     color: white;
     text-decoration: none;
     padding: 0 20px 0 20px;
     font-size: 20px;
+}
+
+.navlink a:hover,
+.logo a:hover {
+    color: rgb(172, 172, 172);
+    text-decoration: none;
 }
 
 .toggle-button {
@@ -51,6 +58,7 @@
     height: 21px;
     margin: 20px;
     margin-right: 30px;
+    transition: all 500ms ease;
 }
 
 .toggle-button .bar {
@@ -60,7 +68,7 @@
     border-radius: 10px;
 }
 
-.nav-bar.nav-fixed {
+.nav-bar-nav.nav-fixed {
     background-color: black;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -112,13 +120,17 @@
     margin-right: auto;
 }
 
+.description h2 {
+    font-size: 40px;
+}
+
 .i-do {
     padding-top: 70px;
     background-color: rgb(218, 218, 218);
 }
 
 .i-do h1 {
-    font-size: 30px;
+    font-size: 40px;
     padding: 30px 0 30px 0;
 }
 
@@ -152,12 +164,13 @@
 
 .experience h1 {
     padding: 100px 0 30px 0;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .experience div h2 {
     text-align: left;
     padding: 50px 0 0 50px;
+    font-size: 25px;
 }
 
 .logo-row {
@@ -177,8 +190,9 @@
 }
 
 .row1 div {
-    margin: 80px 30px;
-    width: 10%;
+    margin: 4%;
+    width: 100px;
+    height: 100px;
 }
 
 .row1 img {
@@ -196,24 +210,21 @@
 
 .row2 img {
     width: 100%;
-    height: 100%;
 }
 
-.row2 div div {
-    width: 60%;
-    margin: 10%;
+.row2 div {
+    width: 150px;
+    height: 150px;
 }
 
 .row2 {
-    margin-left: 20%;
-    position: relative;
-    right: 10%;
+    margin-left: 10%;
 }
 
 .row2 h2 {
     width: 300px;
     position: relative;
-    right: 5%;
+    right: 50px;
 }
 
 .fixed-white {
@@ -272,13 +283,14 @@
 }
 
 .projects div h1 {
-    font-size: 30px;
+    font-size: 40px;
     padding-bottom: 20px;
 }
 
 .projects .project-img {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .project-img div img {
@@ -288,8 +300,8 @@
 }
 
 .project-img div {
-    width: 700px;
     height: 300px;
+    width: 550px;
     margin: 0 30px 100px 30px;
 }
 
@@ -357,16 +369,17 @@
 
 .contact {
     background-color: rgb(218, 218, 218);
-    padding: 100px;
+    padding: 100px 0;
 }
 
 .contact h1 {
     font-size: 30px;
-    padding: 30px;
+    margin-bottom: 30px;
+    margin-top: 40px;
 }
 
 .contact button {
-    margin-top: 30px;
+    margin-top: 15px;
     color: black;
     font-size: 20px;
     padding: 10px 20px 10px 20px;
@@ -387,46 +400,135 @@
     margin-right: auto;
 }
 
+.envelope {
+    position: relative;
+    z-index: -1;
+}
+
+.envelope-show {
+    z-index: 0;
+}
+
 footer {
     padding: 50px;
     background-color: rgb(22, 22, 22);
 }
 
 footer div i {
-    padding: 25px;
+    width: 5%;
+    height: 10%;
     color: rgb(218, 218, 218);
+    margin: 15px 5px;
 }
 
 footer p {
+    padding-top: 25px;
     color: rgb(218, 218, 218);
-    padding-top: 20px;
 }
 
 footer div i:hover {
-    font-size: 28px;
-    transition: 500ms ease;
+    font-size: 43.5px;
+    transition: 1000ms ease;
+    margin: 5px 5px;
 }
 
-/* @media (max-width: 1000px) {
+@media (max-width: 1000px) {
     .toggle-button {
         display: flex;
+        margin-top: 28px;
     }
 
-    .nav-link.active {
+    .toggle-button.toggle-fix {
+        transition: all 500ms ease;
+        margin-top: 15px;
+    }
+
+    .navlink.active {
         display: flex;
+        justify-content: center;
+        position: fixed;
+        right: auto;
+        transition: all 500ms ease;
+        background-color: black;
     }
 
-    .nav-bar {
-        position: absolute;
-        background-color: transparent;
-    }
-
-    .nav-link {
+    .navlink {
         position: absolute;
         display: none;
         flex-direction: column;
-        align-items: flex-end;
         margin-top: 50px;
         width: 100%;
     }
-} */
+}
+
+/* experience and what i do*/
+@media (max-width: 1090px) {
+    .row1 div {
+        width: 50px;
+        height: 50px;
+    }
+
+    .i-do section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .i-do section div,
+    .i-do section .corner {
+        padding-bottom: 50px;
+        margin: 0 15%;
+    }
+
+    .i-do section {
+        padding-bottom: 25px;
+    }
+}
+
+/* get in touch and a little bit about me */
+@media (max-width: 810px) {
+    footer div a {
+        font-size: 10px;
+    }
+
+    .description div {
+        width: 100%;
+    }
+
+    .description div p {
+        width: 85%;
+    }
+
+    .contact p {
+        width: 85%;
+    }
+
+    .logo-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row2 {
+        padding-bottom: 200px;
+    }
+
+    .row2 div {
+        position: relative;
+        left: 10%;
+    }
+
+    .projects .done {
+        padding: 100px 10%;
+    }
+
+    .experience p,
+    .description h2 {
+        margin: 0 5%;
+    }
+}
+
+@media (max-width: 420px) {
+    .project-img div {
+        height: 180px;
+    }
+}
