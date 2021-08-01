@@ -545,3 +545,17 @@ footer div i:hover {
         color: black;
     }
 }
+
+.descrip-class,
+.passion-class1,
+.passion-class2,
+.passion-class3,
+.logo-row,
+.project-img {
+    opacity: 0;
+}
+
+.show {
+    opacity: 1;
+    transition: all 1000ms ease;
+}
