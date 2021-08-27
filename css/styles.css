@@ -83,10 +83,16 @@
 .mountain {
     position: absolute;
     z-index: -1;
-    width: 2000px;
+    width: 100%;
     top: -50px;
     right: 0%;
     filter: brightness(50%);
+}
+
+@media (max-width: 2000px) {
+    .mountain {
+        width: 2000px;
+    }
 }
 
 .intro {
@@ -458,6 +464,10 @@ footer div i:hover {
         flex-direction: column;
         margin-top: 50px;
         width: 100%;
+    }
+
+    .nav-bar-nav {
+        background-color: black;
     }
 }
 
