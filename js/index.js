@@ -2,9 +2,7 @@ const toggleBtn = document.getElementsByClassName("toggle-button")[0];
 const navbarLinks = document.getElementsByClassName("navlink")[0];
 
 toggleBtn.addEventListener("click", function () {
-    // if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
     navbarLinks.classList.toggle("active");
-    // }
 });
 
 window.onscroll = function () {
@@ -14,7 +12,6 @@ window.onscroll = function () {
     } else {
         $(".nav-bar-nav").removeClass("nav-fixed");
         $(".toggle-button").removeClass("toggle-fix");
-        // $(".navlink").removeClass("active");
     }
 };
 
