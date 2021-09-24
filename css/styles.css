@@ -158,6 +158,12 @@
     margin-bottom: 50px;
 }
 
+.i-do section .passion-class1 img {
+    position: relative;
+    top: -10px;
+    margin-bottom: 25px;
+}
+
 .i-do section div img:hover {
     cursor: default;
     transform: rotate(360deg);
@@ -181,7 +187,7 @@
 
 .logo-row {
     display: flex;
-    margin: 0 4%;
+    margin: 0 5%;
 }
 
 .logo-row .row1 {
@@ -196,7 +202,7 @@
 }
 
 .row1 div {
-    margin: 4%;
+    margin: 5%;
     width: 100px;
     height: 100px;
 }
@@ -212,25 +218,6 @@
     filter: none;
     -webkit-filter: grayscale(0);
     transition: all 1000ms ease;
-}
-
-.row2 img {
-    width: 100%;
-}
-
-.row2 div {
-    width: 150px;
-    height: 150px;
-}
-
-.row2 {
-    margin-left: 10%;
-}
-
-.row2 h2 {
-    width: 300px;
-    position: relative;
-    right: 50px;
 }
 
 .fixed-white {
@@ -336,6 +323,22 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.project-img .project4 {
+    background-image: url(../images/keeper.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project-img .project5 {
+    background-image: url(../images/tflix.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .project-img div i {
     font-size: 50px;
     margin: 120px 10px 0 10px;
@@ -370,6 +373,26 @@
 }
 
 .project-img .project3:hover i {
+    display: inline-block;
+}
+
+.project-img .project4:hover {
+    display: inline-block;
+    filter: brightness(65%);
+    transition: all 500ms ease;
+}
+
+.project-img .project4:hover i {
+    display: inline-block;
+}
+
+.project-img .project5:hover {
+    display: inline-block;
+    filter: brightness(65%);
+    transition: all 500ms ease;
+}
+
+.project-img .project5:hover i {
     display: inline-block;
 }
 
