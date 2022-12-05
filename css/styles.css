@@ -339,6 +339,14 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.project-img .project6 {
+    background-image: url(../images/lost_cost.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .project-img div i {
     font-size: 50px;
     margin: 120px 10px 0 10px;
@@ -393,6 +401,16 @@
 }
 
 .project-img .project5:hover i {
+    display: inline-block;
+}
+
+.project-img .project6:hover {
+    display: inline-block;
+    filter: brightness(65%);
+    transition: all 500ms ease;
+}
+
+.project-img .project6:hover i {
     display: inline-block;
 }
 
